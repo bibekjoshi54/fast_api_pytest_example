@@ -6,8 +6,9 @@ from pytest_example.repository.impl.dynamo_db_todo import DynamoDbTODOStore
 from pytest_example.usecase.create_todo import CreateToDoUsecase
 from pytest_example.usecase.list_todo import ListToDoUsecase
 from pytest_example.usecase.mark_complete_todo import MarkTodoCompleteUsecase
-from .router import TODO_ROUTER
+
 from .dto import TODOCreateDTO
+from .router import TODO_ROUTER
 
 
 @TODO_ROUTER.get("/", response_model=list[TODOEntity])

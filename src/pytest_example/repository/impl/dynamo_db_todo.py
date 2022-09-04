@@ -1,6 +1,7 @@
 import botocore
 from boto3.dynamodb.conditions import Key
 from pydantic import parse_obj_as
+
 from pytest_example.repository.interface.itodo_repo import ITodoRepo, TODOEntity
 
 

@@ -17,7 +17,6 @@ class TestTodo:
         self.entity_all_argument_assignment()
         self.invalid_staus_transition()
 
-
     def entity_default_assignment(self):
         default_parameter_assignment_mock = DEFAULT_ASSIGNMENT
         todo = TODOEntity.parse_obj(default_parameter_assignment_mock)

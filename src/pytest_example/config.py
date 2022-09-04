@@ -1,6 +1,5 @@
 from starlette.config import Config
 
-
 config = Config()
 
 CONFIG_AWS_ENDPOINT = config.get(

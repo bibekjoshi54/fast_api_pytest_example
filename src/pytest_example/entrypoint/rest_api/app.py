@@ -4,9 +4,9 @@ from fastapi import FastAPI
 from fastapi.requests import Request
 from starlette.responses import JSONResponse
 
-from .resource import TODO_ROUTER
 from ...config import CONFIG_AWS_ENDPOINT
 from ...repository.impl.dynamo_event_helper import dynamo_start_up
+from .resource import TODO_ROUTER
 
 
 def get_app():

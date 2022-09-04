@@ -1,5 +1,3 @@
-import json
-
 from starlette.testclient import TestClient
 
 MOCK_DATA = {"task_name": "name-of-task", "task_description": "sample-description"}
