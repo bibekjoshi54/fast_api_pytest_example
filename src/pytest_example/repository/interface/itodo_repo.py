@@ -8,6 +8,13 @@ class ITodoRepo(ABC):
         pass
 
     async def read_todo(self, todo_id: str) -> TODOEntity:
+        """
+
+             :param todo_id: TODID
+             :return: TODOEntity
+             :raises: ValueError
+
+             """
         pass
 
     async def update_todo(self, todo: TODOEntity) -> TODOEntity:
